@@ -1,0 +1,523 @@
+@media all and (max-width: 500px){
+
+    /* --------------- Navbar ----------------*/
+
+    .navbar .logo_image{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 5%;
+    }
+    .navbarMenu .logo_image{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: 10%;
+    }
+    .home_navbar{
+        font-size: 0.4rem;
+        margin-left: 7%;
+    }
+    .navbar_menu{
+        font-size: 0.5rem;
+    }
+    .navbar ul a::after{
+        bottom: -5%;
+    }
+    .navbar ul a:hover::after{
+        bottom: 25%;
+        transition: 250ms;
+    }
+
+     /* --------------- Home ----------------*/
+    #home footer .terms{
+        font-size: 0.38rem;
+        margin-right: 7px;
+    }
+    #home .left_background{
+        height: 89%;
+        width: 200%;
+    }
+    #home .right_background{
+        height: 0;
+        width: 0;
+    }
+    footer{
+        justify-content: center;
+    }
+    .terms a{
+        text-decoration: none;
+        line-height: 1.5rem;
+        margin: 0 2px;
+        color: white;
+    }
+     /* --------------- Menu ----------------*/
+    #menu h5{
+        margin-top: 20px;
+    }
+    #menu{
+        padding-top: 50px;
+    }
+    .food_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container_menu{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pizza_item{
+        height: 300px;
+    }
+    .food_item{
+        height: 200px;
+    }
+    .pizza_item span,.food_item span{
+        font-size: 0.6rem;
+    }
+    .pizza_item h3,.food_item h3{
+        font-size: 0.8rem;
+    }
+    .pizza_item h5,.food_item h5{
+        font-size: 0.7rem;
+    }
+    .pizza_item i,.food_item i{
+        font-size: 0.6rem;
+    }
+
+     /* --------------- Order ----------------*/
+
+    #order{
+        padding-top: 50px;
+    }
+    .stripe_button{
+        transform: scale(0.6);
+    }
+    .form_container{
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+        font-size: 0.8rem;
+    }
+    .user_container{
+        font-size: 0.5rem;
+    }
+    .user_container form button{
+        transform: scale(0.8);
+    }
+    .user_container .MuiTextField-root{
+        transform: scaleY(0.7);
+    }
+    .user_container form{
+        width: 78%;
+    }
+    #order .cart_items li img{
+        width: 25px;
+        height: 25px;
+        margin-left: 3px;
+    }
+
+    /*------------------ About --------------*/
+    .content_container{
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: -10%;
+        grid-gap: 0.2rem;
+    }
+    .content_container .text_container{
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+    }
+    /*------------------ Contact --------------*/
+
+    #contact .contact_form{
+        height: 75%;
+        width:  75%;
+        font-size: 0.8rem;
+    }
+    #contact i{
+        font-size: 1rem;
+    }
+    #contact .contact_form .MuiFormControl-root{
+        transform: scaleY(0.7);
+    }
+    #contact .contact_form .MuiFormControlLabel-root{
+        transform: scale(0.7);
+    }
+    .contact_form button{
+        transform: scale(0.8);
+        margin: 2px;
+    }
+    #contact .contact_form textarea{
+        height: 100px;
+        margin: 5px;
+    }
+
+       /* --------------- Signup ----------------*/
+
+
+       .signup_container form{
+        margin: 35% auto;
+        width: 70%;
+        height: 60%;
+        font-size: 0.8rem;
+    }
+    .signup_container button{
+        transform: scale(0.8);
+    }
+    .signup_container .MuiFormControl-root{
+        width: 75%;
+    }
+
+    .history_table{
+        margin-top: 30%;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 768px){
+
+    /* --------------- Navbar ----------------*/
+
+    .navbar .logo_image{
+        width: 120px;
+        height: 120px;
+        top: 10px;
+        left: 5%;
+    }
+    .navbarMenu .logo_image{
+        width: 120px;
+        height: 120px;
+        top: 10px;
+        left: 5%;
+    }
+    .home_navbar{
+        font-size: 0.5rem;
+        margin-left: 7%;
+    }
+    .navbar_menu{
+        font-size: 0.5rem;
+    }
+    .navbarMenu{
+        font-size: 0.6rem;
+    }
+    .navbar ul a::after{
+        bottom: -5%;
+    }
+    .navbar ul a:hover::after{
+        bottom: 25%;
+        transition: 250ms;
+    }
+
+     /* --------------- Home ----------------*/
+    #home footer .terms{
+        font-size: 0.5rem;
+        margin-right: 7px;
+    }
+    #home .left_background{
+        height: 89%;
+        width: 100%;
+    }
+    #home .right_background{
+        height: 89%;
+        width: 100%;
+    }
+    footer{
+        justify-content: space-evenly;
+    }
+    .terms a{
+        text-decoration: none;
+        line-height: 1.5rem;
+        margin: 0 2px;
+        color: white;
+    }
+     /* --------------- Menu ----------------*/
+    #menu h5{
+        margin-top: 50px;
+    }
+    #menu{
+        padding-top: 50px;
+    }
+    .food_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container_menu{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .pizza_item{
+        height: 350px;
+    }
+    .food_item{
+        height: 300px;
+    }
+    .pizza_item span,.food_item span{
+        font-size: 0.7rem;
+    }
+    .pizza_item h3,.food_item h3{
+        font-size: 0.8rem;
+    }
+    .pizza_item h5,.food_item h5{
+        font-size: 0.7rem;
+    }
+    .pizza_item i,.food_item i{
+        font-size: 0.7rem;
+    }
+
+     /* --------------- Order ----------------*/
+
+    #order{
+        padding-top: 100px;
+    }
+    .stripe_button{
+        transform: scale(0.8);
+    }
+    .form_container{
+        width: 90%;
+        height: 400px;
+        margin-top: 50px;
+        font-size: 0.8rem;
+    }
+    .user_container{
+        font-size: 0.7rem;
+    }
+    .user_container form button{
+        transform: scale(0.8);
+    }
+    .user_container .MuiTextField-root{
+        transform: scaleY(0.7);
+    }
+    .user_container form{
+        width: 78%;
+    }
+    #order .cart_items li img{
+        width: 35px;
+        height: 35px;
+        margin-left: 5px;
+    }
+
+    /*------------------ About --------------*/
+    .content_container{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .content_container .text_container{
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+    }
+    /*------------------ Contact --------------*/
+
+    #contact .contact_form{
+        height: 75%;
+        width:  50%;
+        font-size: 0.8rem;
+    }
+    #contact i{
+        font-size: 1rem;
+    }
+    #contact .contact_form .MuiFormControl-root{
+        transform: scaleY(0.7);
+    }
+    #contact .contact_form .MuiFormControlLabel-root{
+        transform: scale(0.8);
+    }
+    .contact_form button{
+        transform: scale(0.8);
+        margin: 2px;
+    }
+    #contact .contact_form textarea{
+        height: 100px;
+        margin: 5px;
+    }
+
+       /* --------------- Signup ----------------*/
+
+
+       .signup_container form{
+        margin: 15% auto;
+        width: 50%;
+        height: 70%;
+        font-size: 0.8rem;
+    }
+    .signup_container button{
+        transform: scale(0.8);
+    }
+    .signup_container .MuiFormControl-root{
+        width: 75%;
+    }
+
+    .history_table{
+        margin-top: 30%;
+    }
+}
+
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+        /* --------------- Navbar ----------------*/
+
+        .navbar .logo_image{
+            width: 150px;
+            height: 150px;
+            top: 7px;
+            left: 5%;
+        }
+        .navbarMenu .logo_image{
+            width: 150px;
+            height: 150px;
+            top: 7px;
+            left: 5%;
+        }
+        .home_navbar{
+            font-size: 0.6rem;
+            margin-left: 7%;
+        }
+        .navbar_menu{
+            font-size: 0.7rem;
+        }
+        .navbarMenu{
+            font-size: 0.7rem;
+        }
+        .navbar ul a::after{
+            bottom: -5%;
+        }
+        .navbar ul a:hover::after{
+            bottom: 25%;
+            transition: 250ms;
+        }
+    
+         /* --------------- Home ----------------*/
+        #home footer .terms{
+            font-size: 0.5rem;
+            margin-right: 7px;
+        }
+        #home .left_background{
+            height: 77%;
+            width: 100%;
+        }
+        #home .right_background{
+            height: 77%;
+            width: 100%;
+        }
+        footer{
+            justify-content: space-evenly;
+        }
+        .terms a{
+            text-decoration: none;
+            line-height: 1.5rem;
+            margin: 0 2px;
+            color: white;
+        }
+         /* --------------- Menu ----------------*/
+        #menu h5{
+            margin-top: 65px;
+        }
+        #menu{
+            padding-top: 50px;
+        }
+        .food_container{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .container_menu{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .pizza_item{
+            height: 350px;
+        }
+        .food_item{
+            height: 300px;
+        }
+        .pizza_item span,.food_item span{
+            font-size: 0.8rem;
+        }
+        .pizza_item h3,.food_item h3{
+            font-size: 0.8rem;
+        }
+        .pizza_item h5,.food_item h5{
+            font-size: 0.7rem;
+        }
+        .pizza_item i,.food_item i{
+            font-size: 0.8rem;
+        }
+    
+         /* --------------- Order ----------------*/
+    
+        #order{
+            padding-top: 90px;
+        }
+        .stripe_button{
+            transform: scale(0.85);
+        }
+        .form_container{
+            width: 70%;
+            height: 400px;
+            margin-top: 50px;
+            font-size: 0.8rem;
+        }
+        .user_container{
+            font-size: 0.8rem;
+        }
+        .user_container form button{
+            transform: scale(0.85);
+        }
+        .user_container .MuiTextField-root{
+            transform: scaleY(0.7);
+        }
+        .user_container form{
+            width: 78%;
+        }
+        #order .cart_items li img{
+            width: 38px;
+            height: 38px;
+            margin-left: 7px;
+        }
+    
+        /*------------------ About --------------*/
+        .content_container{
+            width: 100%;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .content_container .text_container{
+            font-size: 0.7rem;
+            line-height: 0.8rem;
+        }
+        /*------------------ Contact --------------*/
+    
+        #contact .contact_form{
+            height: 75%;
+            width: 35%;
+            font-size: 0.8rem;
+        }
+        #contact i{
+            font-size: 1.2rem;
+        }
+        #contact .contact_form .MuiFormControl-root{
+            transform: scaleY(0.7);
+        }
+        #contact .contact_form .MuiFormControlLabel-root{
+            transform: scale(0.8);
+        }
+        .contact_form button{
+            transform: scale(0.8);
+            margin: 2px;
+        }
+        #contact .contact_form textarea{
+            height: 100px;
+            margin: 5px;
+        }
+    
+           /* --------------- Signup ----------------*/
+    
+    
+           .signup_container form{
+            margin: 10% auto;
+            width: 35%;
+            height: 80%;
+            font-size: 0.9rem;
+        }
+        .signup_container button{
+            transform: scale(0.8);
+        }
+        .signup_container .MuiFormControl-root{
+            width: 75%;
+        }
+    
+        .history_table{
+            margin-top: 15%;
+        }
+}

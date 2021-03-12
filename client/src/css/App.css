@@ -1,0 +1,601 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    overflow-x: hidden;
+}
+
+#home .right_background,.left_background{
+height: 60%;
+width: 100%;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: black;
+    position: relative;
+}
+
+#home footer .terms{
+    margin-right: 120px;
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url('../images/toa60.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact_form{
+    height: 71%;
+    width: 27%;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 1;
+    font-family: 'Lemonada', cursive;
+    border-radius: 5px;
+    margin-top: -1%;
+}
+
+.contact_form button{
+    background-color: black!important;
+    color: white!important;
+}
+#contact .contact_form .MuiFormControl-root{
+    width: 81%;
+    margin: 10px;
+    background-color: rgba(0,0,0,0.1)!important;
+}
+#contact .contact_form textarea{
+    width: 80%;
+    resize: none;
+    margin: 10px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.1);
+
+}
+#contact i{
+    font-size: 1.8rem;
+    margin: 10px 20px;
+    cursor: pointer;
+    color: white!important;
+    line-height: 3rem;
+}
+#contact i:hover{
+    transform: scale(1.1);
+    transition: 150ms;
+}
+
+.terms{
+    color: white;
+    margin-right: 20px;
+}
+
+.terms a{
+    text-decoration: none;
+    line-height: 2rem;
+    margin: 0 10px;
+    color: white;
+}
+.terms a:visited{
+    color: white;
+}
+
+.checkbox_black{
+    color: black!important;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lemonada', cursive;
+}
+
+#menu{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    font-family: 'Lemonada', cursive;
+    position:relative;
+}
+#menu h5{
+    margin-top: 50px;
+}
+
+#order{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 130px;
+    font-family: 'Lemonada', cursive;
+    background: url('../images/toa62.jpg');  
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.content_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px lightgrey;
+}
+
+.content_container .text_container{
+    height: auto;
+    width: 88%;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+.content_container .text_container p{
+    font-family: 'Lemonada', cursive;
+}
+
+.content_container .text_container:nth-child(4),.text_container:nth-child(6){
+    padding: 20px 0;
+}
+.content_container .text_container:nth-child(2){
+    padding-top: 10px;
+}
+.content_container a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+.content_container a::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10%;
+}
+
+.content_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.page_button{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    box-shadow:  0 0 5px lightgrey;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+.navbarMenu{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    box-shadow:  0 0 5px lightgrey;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+
+.home_navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 65%;
+    margin-left: 25%;
+}
+.navbar_menu{
+    margin-right: 5%;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    line-height: 2.8rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: 'Lemonada', cursive;
+}
+.navbarMenu ul a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    line-height: 2.8rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-family: 'Lemonada', cursive;
+}
+.navbar ul a::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -15%;
+    left: 0;
+    opacity: 0;
+}
+
+.navbar ul a:hover::after{
+    bottom: 15%;
+    transition: 300ms;
+    opacity: 1;
+}
+
+.navbarMenu .logo_image{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    z-index: 2;
+}
+
+.navbar .logo_image{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: -15px;
+    left: 5%;
+    z-index: 2;
+}
+
+.card_items p{
+    text-align: left;
+    margin-left: 10px;
+}
+.card_items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: start;
+}
+
+
+#info
+{
+	font-size: 18px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.container_menu{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    width: 100vw;
+}
+
+
+.container_menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.card_container{
+    margin-left: 0.5rem;
+}
+.food_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80vw;
+    height: 75vh;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.food_item{
+    height: 300px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    position: relative;
+}
+
+.pizza_item{
+    height: 400px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    position: relative;
+}
+.food_actions{
+    width: 100%;
+    margin-top: 15px;
+}
+.food_actions span{
+    position: absolute;
+    left: 3%;
+    bottom: 3.5%;
+}
+.food_actions i{
+    position: absolute;
+    right: 3%;
+    bottom: 3.5%;
+    cursor: pointer;
+}
+.food_actions i:hover{
+    transform: scale(1.1);
+    transition: 150ms;
+    color: green;
+}
+.food_item i:active{
+    transform: scale(1.3);
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px lightgrey;
+    height: 450px;
+    margin-top: 100px;
+}
+
+
+
+.cart{
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.MuiPaper-root h4{
+    width: 100%;
+    color: white!important;
+}
+
+#order .MuiPaper-root{
+    background: rgba(0,0,0,0)!important;
+}
+
+#order ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+#order ul li{
+    width: 95%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 0 auto;
+}
+
+#order ul{
+    border-bottom: 1px solid white;
+}
+
+#order .cart_items{
+    margin-top: 5px;
+    border: none;
+}
+#order .cart_items li{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background: white;
+    color: black;
+    margin: 5px auto;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+#order .cart_items li img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+#order .cart_items li .fa-trash-alt{
+    cursor: pointer;
+    color: black;
+    font-size: 0.8rem;
+}
+#order .cart_items li .fa-trash-alt:hover{
+    color: red;
+    transition: 200ms;
+    transform: scale(1.1);
+}
+.user_container{
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.user_container a{ 
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+.user_container a::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.user_container a:visited{
+    color: black;
+}
+.user_container form{
+    display: flex;
+    flex-flow: column;
+    width: 88%;
+    margin: 0 auto;
+}
+.user_container form button{
+    width: 25%;
+    margin: 0 auto;
+    color: white!important;
+    background: black!important;
+}
+
+
+.signup_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.signup_container form{
+    margin-top: 10%;
+    margin-left: 60%;
+    width: 25%;
+    height: 60%;
+    box-shadow: 0 0  5px lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+}
+.signup_container form h2{
+    font-family: 'Lemonada', cursive;
+}
+.signup_container button{
+    width: 25%;
+    color: white!important;
+    background-color: black!important;
+}
+.signup_container .MuiFormControl-root{
+    width: 75%;
+}
+.history_table{
+    margin-top: 15%;
+}
+
+
+
+.error_page{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.error_page h1{
+    font-size: 3rem;
+}
+
+.message_container{
+    width: 100%;
+}
+
+.error_page a:visited{
+    color: white;
+}
+body
+{
+	text-align: center;
+	margin: auto;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(black),
+									   to(black),
+									   color-stop(.6,black))
+}
