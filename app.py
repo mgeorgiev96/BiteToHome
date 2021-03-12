@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, redirect, session,jsonify
 from pymongo import MongoClient
 import bcrypt
+import os
 
 app = Flask(__name__)
-app.secret_key = 'martin92001secretl;asd;ad;a;dk66l'
+app.secret_key = os.environ.get(SECRET_KEY)
 
-mongoDB = MongoClient('mongodb+srv://mgeorgiev9611:martin12345@testcluster1.u94v9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoDB = MongoClient(os.environ.get(MONGO_DB))
 db = mongoDB['python']['BiteToHome']
 
 
