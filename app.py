@@ -4,9 +4,9 @@ import bcrypt
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get(SECRET_KEY)
+app.secret_key = os.environ.get("SECRET_KEY")
 
-mongoDB = MongoClient(os.environ.get(MONGO_DB))
+mongoDB = MongoClient(os.environ.get("MONGO_DB"))
 db = mongoDB['python']['BiteToHome']
 
 
