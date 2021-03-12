@@ -27,6 +27,28 @@ function Order(props) {
     return (
         <div id='order'>
             <div className='form_container'>
+                {(()=>{
+                  if(props.menu.user.name){
+                    return <div  key={uniqid()} className='user_container'>
+                      <h2>Welcome,<br></br>{props.menu.user.name}</h2>
+                      <Link to='/history'>View Purchase History</Link>
+                      <br></br>
+                      <StripeCheckout/>
+                    </div>
+                  }else{
+                    return <div  key={uniqid()} className='user_container'>
+                        <h2>Login to order.</h2>
+                        <h4>No account? Click <Link to='/signup' className='page_button'>HERE</Link>.</h4>
+                        <form onSubmit={(e)=> e.preventDefault()}>
+                            <TextField required id='username' name='username' type='email' label="Email..." variant="outlined" onSubmit={(e)=> e.preventDefault()} />
+                            <br></br>
+                            <TextField required id='password' name='password' type='password'  label="Password..." variant="outlined" />
+                            <br></br>
+                            <Button  onClick={logUser} type='submit' variant="outlined">Login</Button>
+                        </form>
+                  </div>
+                  }
+                })()}
                 <div className='cart'>
                   <h4><i className="fas fa-shopping-basket"></i> Basket: ${props.menu.total}</h4>
                   <ul>
@@ -50,28 +72,6 @@ function Order(props) {
                       })}
                     </ul>
                 </div>
-                {(()=>{
-                  if(props.menu.user.name){
-                    return <div  key={uniqid()} className='user_container'>
-                      <h2>Welcome,<br></br>{props.menu.user.name}</h2>
-                      <Link to='/history'>View Purchase History</Link>
-                      <br></br>
-                      <StripeCheckout/>
-                    </div>
-                  }else{
-                    return <div  key={uniqid()} className='user_container'>
-                        <h2>Login to order.</h2>
-                        <h4>No account? Click <Link to='/signup' className='page_button'>HERE</Link>.</h4>
-                        <form onSubmit={(e)=> e.preventDefault()}>
-                            <TextField required id='username' name='username' type='email' label="Email..." variant="outlined" onSubmit={(e)=> e.preventDefault()} />
-                            <br></br>
-                            <TextField required id='password' name='password' type='password'  label="Password..." variant="outlined" />
-                            <br></br>
-                            <Button  onClick={logUser} type='submit' variant="outlined">Login</Button>
-                        </form>
-                  </div>
-                  }
-                })()}
             </div>
         </div>
     )

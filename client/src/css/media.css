@@ -35,12 +35,15 @@
         margin-right: 7px;
     }
     #home .left_background{
-        height: 89%;
+        height: 100%;
         width: 200%;
     }
     #home .right_background{
         height: 0;
         width: 0;
+    }
+    #home footer{
+        display: none;
     }
     footer{
         justify-content: center;
@@ -92,13 +95,19 @@
         transform: scale(0.6);
     }
     .form_container{
-        width: 100%;
+        width: 82%;
         height: 400px;
         margin-top: 50px;
         font-size: 0.8rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cart{
+        height: 270px;
+        border-radius: 0;
     }
     .user_container{
         font-size: 0.5rem;
+        padding: 10px 0;
     }
     .user_container form button{
         transform: scale(0.8);

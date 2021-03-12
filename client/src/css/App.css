@@ -396,8 +396,8 @@ footer{
     background-color: rgba(0,0,0,0.8);
     color:white;
     border-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     height: 100%;
     overflow: auto;
 }
@@ -475,6 +475,8 @@ footer{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .user_container a{ 
     color: black;

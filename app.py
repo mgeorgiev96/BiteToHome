@@ -12,7 +12,6 @@ db = mongoDB['python']['BiteToHome']
 @app.route('/')
 def index():
     try:
-        session.pop('user',None)
         user = session['user']
         return render_template('index.html')
     except:
